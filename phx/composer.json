@@ -1,0 +1,21 @@
+{
+    "name": "tom/phx",
+    "authors": [
+        {
+            "name": "Tom Bacci",
+            "email": "tom.bacci@hotmail.fr"
+        }
+    ],
+    "require": {},
+    "require-dev":
+    {
+        "phpunit/phpunit" : "5.1.*"
+    },
+    "autoload":{
+        "psr-4":{
+            "Config\\":"Config",
+            "Tag\\":"Tag",
+            "Core\\":"Core"
+        }
+    }
+}

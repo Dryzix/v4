@@ -1,0 +1,31 @@
+{
+  "siteUrl": "http://192.168.15.191/v4/",
+  "rootPath": "C:/xampp/htdocs/v4/site/",
+  "confPath": "generic/conf/",
+  "Database": {
+    "type": "mysql",
+    "dbHost": "localhost",
+    "dbUser": "root",
+    "dbPassword": "",
+    "dbName" : "test"
+  },
+  "Debug":{
+    "path" : "debug/"
+  },
+  "Cache": {
+      "use": true,
+      "path": "tmp/"
+  },
+  "Templater":{
+    "tagsNamespace" : "\\SITE\\Templater\\Tag",
+    "tags":{
+      "custom" : ["perso"]
+    }
+  },
+  "Router":{
+    "routesConfFile": "routes.json"
+  },
+  "Controller":{
+    "controllersNamespace" : "\\SITE\\Controller"
+  }
+}

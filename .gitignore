@@ -1,0 +1,6 @@
+doc/*
+.idea/*
+phxtest/*
+output/*
+vendor/*
+phx/vendor/*

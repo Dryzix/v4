@@ -1,0 +1,12 @@
+{
+   "GET": {
+       "/": {"callable": "Home#index"},
+       "/loop": {"callable": "Simple#loop"},
+       "/vars": {"callable": "Simple#vars"},
+       "/test/:id": {"callable": "Home#index2", "with": {":id" : "([0-9]+)"}}
+     },
+  "POST": {
+    "/": {"callable": "Home#index"},
+    "/form": {"callable": "Form#test"}
+  }
+}

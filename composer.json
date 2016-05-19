@@ -1,0 +1,20 @@
+{
+    "name": "tom/phxmotor",
+    "authors": [
+        {
+            "name": "Tom Bacci",
+            "email": "tom.bacci@hotmail.fr"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "PHX\\": "phx",
+            "SITE\\": "site"
+        }
+    },
+    "includes": [
+        "phx/composer.json"
+    ]
+
+}

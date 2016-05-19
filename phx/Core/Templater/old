@@ -1,0 +1,35 @@
+ foreach($values as $value)
+                                {
+                                    $vvalues  = explode('->', $value);
+                                    // Si c'est un tableau clef -> valeur
+                                    if(count($vvalues) > 1)
+                                    {
+                                        $key = $vvalues[0];
+                                        $val = $vvalues[1];
+                                        // Suppression des quotes et guillemets et des faux espaces
+                                        if(preg_match('#(\'|")(.*?)(\'|")#is', $key, $out))
+                                        {
+                                            $key = $out[2];
+                                        }
+                                        // Suppression des quotes et guillemets et des faux espaces
+                                        if(preg_match('#(\'|")(.*?)(\'|")#is', $val, $out))
+                                        {
+                                            $val = $out[2];
+                                        }
+
+                                        $tab[$key] = $val;
+                                    }
+                                    else
+                                    {
+                                        // Suppression des quotes et guillemets et des faux espaces
+                                        if(preg_match('#(\'|")(.*?)(\'|")#is', $value, $out))
+                                        {
+                                            $value = $out[2];
+                                        }
+                                        else{
+                                            $value = preg_replace('#\s#', '', $value);
+                                        }
+
+                                        $tab[] = $value;
+                                    }
+                                }

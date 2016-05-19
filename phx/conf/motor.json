@@ -1,0 +1,21 @@
+{
+  "motorPath" : "S:/programmes/xampp/htdocs/v4/phx/",
+  "Debug":{
+    "mode" : "hard"
+  },
+  "Templater":{
+    "tagsDirectory" : "Tag",
+    "tags":{
+        "b" : ["b"],
+        "modules" : ["modules", "modulesCss", "modulesJs"],
+        "if" : ["if", "else", "elseif"],
+        "loop" : ["loop"],
+        "date" : ["date"],
+        "string" : ["txt"],
+        "url" : ["url", "root"],
+        "db" : ["dbSelect", "dbLoop", "dbInsert", "dbUpdate", "dbDelete", "dbStep", "dbOpt", "dbPages"],
+        "form" : ["form"],
+        "rand" : ["rand", "rand_min", "rand_max", "rand_test"]
+    }
+  }
+}
